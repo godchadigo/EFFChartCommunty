@@ -67,7 +67,8 @@ _chart.drawLine(data, "blue", 3);
 [ChartJS會卡的範例](https://www.youtube.com/shorts/hpHIM0aRDxE)
 [EFFChart範例](https://www.youtube.com/shorts/bCXjcD4fKfw)
 #### 範例照片
-
+![Photo/社群板.png]
+![Photo/專業板.png]
 #### Communty(社群版)
 - 移植原理
 - 威倫範例
