@@ -7,7 +7,7 @@ module.exports = (function() {
     var paddingLastY = 0;    
     var Env = 1;
     // XChart 的定義
-    function XChart(con) {
+    function EFFChart(con) {
         // 构造函数的实现
         minX = con.minX;
         // user defined properties  	
@@ -64,7 +64,7 @@ module.exports = (function() {
         // draw x y axis and tick marks  
     }
 
-    XChart.prototype = 
+    EFFChart.prototype = 
     {
         getLongestValueWidth: function() {
             this.context.font = this.font;  
@@ -267,7 +267,7 @@ module.exports = (function() {
 
     // 返回 LineChart 結構函數
     return {
-        XChart: XChart,
+        EFFChart: EFFChart,
         Test: Test,        
     };
 })();
