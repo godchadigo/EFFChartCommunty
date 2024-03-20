@@ -1,7 +1,8 @@
 # EFFChart Weintek NC XY高速圖表
 
 ### 請先閱讀
-此圖表本身只包含*xy LineChart*功能，EFFChart是基於[*Ashwani Tyagi*](https://www.c-sharpcorner.com/members/ashwani-tyagi)的[Canvas LineChart](https://www.c-sharpcorner.com/UploadFile/18ddf7/html5-line-graph-using-canvas/)移植的，開原版本只開放移植的原始碼以及過程。
+1. 此圖表本身只包含*xy LineChart*功能，EFFChart是基於[*Ashwani Tyagi*](https://www.c-sharpcorner.com/members/ashwani-tyagi)的[Canvas LineChart](https://www.c-sharpcorner.com/UploadFile/18ddf7/html5-line-graph-using-canvas/)移植的，開原版本只開放移植的原始碼以及過程。
+2. 支援CMT全系列，不支援MT系列。
 ### 開發原因
 由於工作需求，客戶要求我在人機上添加xy LineChart功能用於顯示nc加工路徑，並且還要能夠顯示刀子當前位置，單純的我最初使用人機內建的xy曲線圖，做是做出來了，但發現加上一個一定的小點不太好處理，如果都是在第一象限那很簡單，就是利用移動物件加上比例算換，然後人機獲取座標做轉換顯示到畫面上，但是呢! 如果要全部象限都要很順暢地顯示呢就會變得稍加複雜，這部分不是本文探討重點，有興趣可以加入[*台灣自動化交流群Line*](https://line.me/ti/g2/Hj9P6TXw7oQUBFyc7hMmkc4QCv7VZ_mGyXutPQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default)**Tag我(小黃)**，於是呢要能夠保證準確度以及開發不太複雜，我直接用上了[ChartJS](https://www.chartjs.org/)這也是最有效率省時的開發方法，但是呢就遇到了一個致命的問題ChartJS在每次更新都會調用clearRect()然後重新繪製，這導致在本來就效能不足的嵌入式平台負荷了過多的刷新效能，導致畫面卡頓刷新起來根本不能看，會被客戶打槍的那種，既然套件不行，於是呢我就直接創造一個圖表，所以EFFChart就誕生了。
 ### 介紹
