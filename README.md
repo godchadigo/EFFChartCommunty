@@ -67,6 +67,7 @@ _chart.drawLine(data, "blue", 3);
 [ChartJS會卡的範例](https://www.youtube.com/shorts/hpHIM0aRDxE)
 [EFFChart範例](https://www.youtube.com/shorts/bCXjcD4fKfw)
 #### 範例照片
+- 畫面比較糊是因為我電腦是4k螢幕，然後我專案開2078x 7吋的，強制放大這麼大，因為我的環境是2078，以後有空更新高畫質照片。
 ![](Photo/社群板.png)
 ![](Photo/專業板.png)
 #### Communty(社群版)
